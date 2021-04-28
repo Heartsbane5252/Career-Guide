@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400&display=swap');
+
+
+:root {
+    --jumbotron-padding-y: 3rem;
+}
+
+.jumbotron {
+    padding-top: var(--jumbotron-padding-y);
+    padding-bottom: var(--jumbotron-padding-y);
+    margin-bottom: 0;
+    background-color: #fff;
+}
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    background-color: #fff;
+    /* background-color: #b8b7b3; */
+    font-family: 'Noto Sans KR', sans-serif;
+}
+header{
+    position: absolute;
+    top: 0;
+    left: o;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 11000;
+}
+
+header .logo{
+    color: #094b65;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+}
+header ul li{
+list-style: none;
+margin-left: 20px;
+}
+header ul li a{
+    text-decoration: none;
+    padding:  3px 20px;
+    color: #094b65;
+}
+header ul li a:hover,
+header ul li a.active{
+    background:#094b65;
+    color: #ffffff;
+    border-radius: 24px;
+}
+@media (min-width: 768px) {
+    .jumbotron {
+        padding-top: calc(var(--jumbotron-padding-y) * 2);
+        padding-bottom: calc(var(--jumbotron-padding-y) * 2);
+    }
+}
+
+.jumbotron p:last-child {
+    margin-bottom: 0;
+}
+
+.jumbotron-heading {
+    font-weight: 300;
+}
+
+.jumbotron .container {
+    max-width: 40rem;
+}
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+footer p {
+    margin-bottom: .25rem;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+div img{
+    height: 180px;
+}
+
+.containts h4{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+}
+.containts h4 .team{
+    font-family: 'Baloo Bhai 2', cursive;
+    color: #094b65;
+    text-decoration: none;
+
+}
